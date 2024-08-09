@@ -1,0 +1,79 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+.product-page {
+  display: flex;
+  margin-top: 5%;
+  min-height: 100vh;
+}
+
+.fixed-section {
+  width: 40%;
+  padding: 20px;
+  position: sticky;
+  top: 0;
+  background-color: #fff;
+  height: 100vh;
+}
+
+.scrollable-section {
+  width: 80%;
+  padding-right: 0;
+  padding-left: 50px;
+}
+
+.scrollable-section img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+form input, form select {
+  margin-bottom: 10px;
+  padding: 8px;
+  font-size: 16px;
+}
+
+@media (max-width: 1000px) {
+  .product-page {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .fixed-section {
+    width: 100%;
+    position: relative;
+    height: auto;
+    padding: 20px 10px;
+    margin-top: 5%;
+  }
+  
+  .scrollable-section {
+    width: 100%;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  
+  .scrollable-section img {
+    /* display: none; */
+  }
+  
+  .scrollable-section img:first-of-type {
+    /* display: block; */
+    cursor: pointer;
+  }
+}
+@media (max-width: 560px)and (min-width: 200px){
+  .fixed-section {
+   
+    margin-top: 12%;
+  }
+}

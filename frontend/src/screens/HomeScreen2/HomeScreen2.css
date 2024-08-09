@@ -1,0 +1,159 @@
+.HomeScreen2 {
+  width: 100vw;
+  min-height: fit-content;
+  padding: 0;
+ margin-left: 0;
+ margin-right : 0;
+}
+
+.image-container {
+  height: 180vh;
+  width:100%;
+  
+  
+}
+
+
+
+.image-main
+{
+  height : 100%;
+  width :  100%;
+}
+
+.tagline-heading
+{
+  text-align:center;
+  margin-top:5%;
+  margin-bottom:5%;
+  font-size: 60px;
+}
+
+
+.image-grid
+{
+  height:220vh;
+  width : 97%;
+  
+  display : flex;
+  justify-content: space-around ;
+  align-items: center;
+  align-content: space-between;
+  flex-wrap: wrap;
+  margin-left: 14px;
+  /* margin-right: 25px; */
+ 
+}
+
+.flex-cards
+{
+  height : 49.8%;
+  width : 33%;
+ 
+  /* background-image: url(image2.jpg);
+  background-size: cover; 
+  
+  
+  This will change for responsiveness*/
+   
+
+}
+
+.flex-cards-image
+{
+  height:100%;
+  width : 100%;
+}
+
+/* Mobile devices: 320px - 480px */
+@media (min-width: 300px) and (max-width: 480px) {
+
+  .tagline-heading
+  {
+    
+    font-size: 20px;
+  }
+  
+    .image-grid
+    {
+      height:550vh;
+      width : 100%;
+      margin-bottom: 240px;
+      
+      /* margin-right: 25px; */
+     
+    }
+      .flex-cards
+    {
+      height : 18%;
+      width : 100%;
+      margin-top: 5px;
+     
+      
+    
+    }
+  
+}
+
+/* Tablets: 481px - 768px */
+@media (min-width: 481px) and (max-width: 768px) {
+  
+  .tagline-heading
+{
+  
+  font-size: 30px;
+}
+
+  .image-grid
+  {
+    height:550vh;
+    width : 100%;
+    margin-bottom: 240px;
+    
+    /* margin-right: 25px; */
+   
+  }
+    .flex-cards
+  {
+    height : 18%;
+    width : 100%;
+    margin-top: 5px;
+   
+    
+  
+  }
+}
+
+/* Laptops: 769px - 1024px */
+@media (min-width: 769px) and (max-width: 1024px) {
+
+  .image-grid
+{
+  height:130vh;
+  width : 97%;
+  margin-bottom: 130px;
+  
+  /* margin-right: 25px; */
+ 
+}
+  .flex-cards
+{
+  height : 60%;
+  width : 33%;
+  margin-top: 2px;
+ 
+  
+
+}
+
+}
+
+/* Desktops: 1025px - 1200px */
+@media (min-width: 1025px) and (max-width: 1200px) {
+  
+}
+
+/* Extra-large screens: 1201px and up */
+@media (min-width: 1201px) {
+  
+}

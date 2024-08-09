@@ -1,0 +1,265 @@
+/* Reset default margins and paddings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Base styles */
+  .shoppage {
+    width: 100vw;
+    min-height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* Align items at the top */
+    /* margin-top: 2%; */
+  }
+  
+  .shop-items > h3 {
+    padding-left: 10%;
+  }
+  
+  .list-type {
+    list-style: none;
+    color: grey;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .list-items {
+    margin-top: 3%;
+    padding-left: 10%;
+  }
+  
+  #left {
+    width: 30%;
+    position: sticky;
+    top: 50px;
+  }
+  
+  #left > h1 {
+    font-size: 4em;
+  }
+  
+  #right {
+    width: 70%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+  }
+  
+  .shop-items {
+    height: auto; /* Allow height to adjust based on content */
+    margin-left: 5%;
+    margin-top: 10%;
+    position: sticky;
+  }
+  
+  .card {
+    width: 47%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+  }
+  
+  .right-card {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    transition: opacity 0.1s;
+  }
+  
+  .right-image {
+    width: 100%;
+    background-size: cover;
+  }
+  
+  .caption {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Media queries for responsive design */
+  
+  /* Large Screens (Desktops) */
+  @media (min-width: 1200px) {
+    .shop-items > h3 {
+      padding-left: 20%;
+    }
+  
+    .list-type {
+      padding-left: 10%;
+    }
+    
+    
+  }
+  
+  /* Large Screens (Laptops) */
+  @media (max-width: 1199px) {
+    #left {
+      width: 25%;
+    }
+  
+    .shop-items > h3 {
+      padding-left: 20%;
+    }
+  
+    .list-type {
+      padding-left: 10%;
+    }
+  
+    #right {
+      width: 75%;
+    }
+  
+    .shop-items {
+      margin-left: 4%;
+    }
+  
+    .card {
+      width: 48%;
+    }
+  }
+  
+  /* Medium Screens (Tablets) */
+  @media (max-width: 991px) {
+  
+    #left > h1 {
+      font-size: 2em;
+      padding-left: 10%;
+    }
+  
+    .list-type {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      list-style: none;
+      margin-left: 1%;
+      padding: 0;
+      border: 1px solid black;
+      width: 80vw;
+      margin-bottom: 50px;
+      background-color:white;
+      position: relative; /* Ensure proper positioning context */
+      z-index: 10; /* Higher than #right */
+    }
+  
+    #left {
+      position: sticky;
+      top: 40px;
+      margin-bottom: 200px;
+   
+    }
+  
+    #right {
+      width: 95vw;
+      display: flex;
+      flex-wrap: wrap;
+      margin-top: 150px;
+      margin-left: -22%;
+      border: 1px solid black;
+      position: relative;
+      right: 20px;
+      z-index: 1; /* Ensure it's lower than .list-type */
+    }
+  
+    .card {
+      width: 45%;
+    }
+  
+    .right-image {
+      height: 90%;
+    }
+  
+    .caption {
+      padding-bottom: 30px;
+    }
+  
+    .right-card {
+      border: 1px solid black;
+    }
+  }
+  
+  /* Small Screens (Phones) */
+  @media (max-width: 767px) {
+    #left > h1 {
+      font-size: 2em;
+    }
+  
+    .shop-items > h3 {
+      padding-left: 5%;
+    }
+  
+    .list-type {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      gap: 20px;
+      z-index: 10;
+    }
+  
+    .list-items {
+      padding-left: 5%;
+    }
+  
+    #right {
+      margin-top: 120px; /* Reset margin-top */
+    }
+  
+    .card {
+      width: 48%;
+    }
+  
+    .right-image {
+      height: 80%;
+    }
+  
+    .caption {
+      height: 40%; /* Adjusted height */
+    }
+  }
+  
+  /* Extra Small Screens (Portrait Phones) */
+  @media (max-width: 479px) {
+    #left > h1 {
+      font-size: 1.5em;
+    }
+  
+    .shop-items > h3 {
+      padding-left: 2%;
+    }
+  
+    .list-type {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      gap: 20px;
+    }
+  
+    .list-items {
+      padding-left: 2%;
+    }
+  
+    #right {
+      margin-top: 0; /* Reset margin-top */
+    }
+  
+    .card {
+      width: 100%; /* Full width on extra small screens */
+    }
+  
+    .right-image {
+      height: 90%;
+    }
+  
+    .caption {
+      height: 80%; /* Adjusted height */
+    }
+  }
+  

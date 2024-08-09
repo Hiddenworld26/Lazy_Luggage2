@@ -1,0 +1,57 @@
+
+
+.common-screen-list {
+    list-style: none;
+    font-size: 3em; 
+    font-weight: 900; 
+    margin-top: 8%; 
+    padding-left: 5.5%;
+    /* margin-left: 1%; */
+    margin-bottom: -3%;
+    /* border: 1px solid black; */
+    width:max-content;
+}
+
+
+
+.common-screen-list li a {
+    color: black;
+    text-decoration: none;
+}
+
+.common-screen-list li a:hover {
+    color: grey; 
+}
+
+@media (min-width: 300px) and (max-width: 480px)
+{
+    .common-screen-list 
+    {
+        /* padding-left: 7%; */
+        /* border: 1px solid black; */
+        margin-top: 90px;
+        
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) 
+{
+    .common-screen-list 
+    {
+        padding-left: 7%;
+        
+         /* border: 1px solid black;  */
+        
+        
+    }
+}
+@media (min-width: 1201px) {
+    .common-screen-list 
+    {
+        padding-left: 5.5%;
+        /* border: 1px solid black; */
+        /* padding-top: 5%;  */
+        /* border: 1px solid black; */
+    }
+    
+  }

@@ -1,0 +1,259 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+ 
+}
+
+.shoppage {
+  width: 100vw;
+  min-height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  /* margin-top: 10%; */
+}
+
+.shop-items>h3
+{
+  padding-left : 10%;
+}
+.list-type
+{
+  list-style : none;
+  color : grey;
+ 
+}
+.list-items
+{
+  margin-top: 3%;
+  padding-left: 10%;
+}
+
+#left {
+  width: 40%;
+  height: 100%;
+  
+  position: sticky;
+  top: 50px;
+  
+}
+
+#left>h1
+{
+  font-size: 4em;
+ 
+}
+
+#right {
+  height: 100%;
+  width: 60%;
+
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.shop-items {
+  height: 70vh;
+  margin-left: 5%;
+  margin-top: 10%;
+  position: sticky;
+ 
+}
+
+.card {
+  height: 130vh;
+  width: 48%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+.right-card {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  transition: opacity 0.1s; 
+}
+
+.right-image {
+  height: 80%;
+  width: 100%;
+  background-size: cover;
+ 
+
+}
+
+.caption {
+  height: 20%; 
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ 
+}
+
+
+@media (min-width: 300px) and (max-width: 480px) {
+
+  #left
+  {
+    /* border : 1px solid black; */
+    height : 20vh;
+    width : 100vw;
+    background-color: white;
+  }
+
+  .shop-items>h3
+  {
+    /* border: 1px solid black; */
+    padding-left: 0;
+    
+    
+  }
+  
+  
+  .shoppage
+  {
+    flex-direction: column;
+  }
+  
+  
+  .list-type {
+    display: flex;
+    flex-direction: row;
+    
+    width: 50vw;
+    font-size: 0.5em;
+    gap: 8px; /* Sets no gap between items */
+    padding: 0; /* Remove any default padding if necessary */
+    margin: 0; /* Remove any default margin if necessary */
+    margin-top: 20px;
+    /* margin-left : 20px; */
+    /* border : 1px solid black; */
+   
+    
+    
+   
+  }
+  
+  /* Adjust the styling of individual items if needed */
+  .list-type li {
+    margin: 0; 
+    padding : 0;
+    word-wrap: normal;
+  }
+  #right
+  {
+    width : 100%;
+  }
+
+  .card
+  {
+    width : 100%;
+    height : 90vh;
+    
+  }
+}
+
+/* Tablets: 481px - 768px */
+@media (min-width: 481px) and (max-width: 768px) {
+  .shoppage
+  {
+    flex-direction: column;
+  }
+
+  
+  .shop-items>h3
+  {
+    margin-top : 25px;
+    font-size: larger;
+    
+  }
+
+  .shop-items
+  {
+    background-color: white;
+
+    /* border : 1px solid black; */
+    width : 110vw;
+    height : 15vh;
+    /* padding-top : -50px; */
+    margin-left : -10px;
+    margin-right: -10px;
+  }
+  .list-type {
+    display: flex;
+    flex-direction: row;
+    
+    width: 85vw;
+    font-size: 0.8em;
+    gap: 8px; /* Sets no gap between items */
+    padding: 0; /* Remove any default padding if necessary */
+    margin: 0; /* Remove any default margin if necessary */
+    margin-top: 20px;
+    margin-left : 20px;
+    
+    
+   
+  }
+  
+  /* Adjust the styling of individual items if needed */
+  .list-type li {
+    margin: 0; 
+    padding : 0;
+    word-wrap: normal;
+  }
+
+  #left
+  {
+   
+    height : 150px;
+  }
+
+  #right
+  {
+   /* border : 1px solid black; */
+   width: 95%;
+   margin-left: 8px;
+  }
+
+  .card{
+    height : 100vh;
+    margin-left: 0px;
+    /* border : 1px solid  black; */
+    width : 50%;
+  }
+
+  
+  
+}
+
+/* Laptops: 769px - 1024px */
+@media (min-width: 769px) and (max-width: 1024px) {
+
+  #right
+  {
+    width : 50%;
+    margin-left : 50px;
+  }
+  .card{
+    width:100%;
+  }
+}
+
+/* Desktops: 1025px - 1200px */
+@media (min-width: 1025px) and (max-width: 1200px) {
+  
+}
+
+
+@media (min-width: 1201px) {
+ 
+}
