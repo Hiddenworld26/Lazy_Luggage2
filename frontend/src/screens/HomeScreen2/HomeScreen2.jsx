@@ -5,6 +5,7 @@ import './HomeScreen2.css';
 const HomeScreen2 = () => {
   return (
     <div className="HomeScreen2">
+      
         <div className='image-container'>
           <img src={img} alt="main-image" className="image-main"/>
         </div>

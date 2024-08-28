@@ -15,14 +15,13 @@ body {
 
 .gallery-section {
   text-align: center;
-  /* padding: 20px 0; */
-  margin: 0; /* Ensure no margin on gallery-section */
+  margin: 0;
   padding-top: 6%;
 }
 
 .gallery-heading {
-  margin-bottom: 40px; 
-  font-size: 4em; 
+  margin-bottom: 40px;
+  font-size: 4em;
   color: #333;
   border-bottom: 2px solid black;
   text-align: center;
@@ -38,14 +37,14 @@ body {
   gap: 10px;
   padding: 0 100px;
   box-sizing: border-box;
-  margin: 0; /* Ensure no margin on gallery-container */
+  margin: 0;
 }
 
 .gallery-item {
   position: relative;
   overflow: hidden;
   cursor: pointer;
-  margin: 0; /* Ensure no margin on gallery-item */
+  margin: 0;
 }
 
 .gallery-item.big {
@@ -80,3 +79,85 @@ body {
   object-fit: cover;
   transition: transform 0.3s ease;
 }
+
+/* Responsive Styles */
+@media (max-width: 1930px) and (min-width: 1211px) {
+  .gallery-container {
+    grid-template-columns: repeat(3, 1fr);
+    padding: 0 50px;
+  }
+}
+
+@media (max-width: 1210px) and (min-width: 920px) {
+  .gallery-container {
+    grid-template-columns: repeat(3, 1fr);
+    padding: 0 50px;
+  }
+  .gallery-heading {
+    margin-top: 5%;
+  }
+}
+
+@media (max-width: 919px) and (min-width: 630px) {
+  .gallery-container {
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 300px; /* Adjust this value as needed */
+    padding: 0 30px;
+  }
+  .gallery-item.big {
+    grid-column: span 2;
+  }
+  .gallery-item.small {
+    grid-column: span 1;
+  }
+}
+
+@media (max-width: 629px) {
+  .gallery-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-x: auto;
+    padding: 0 10px;
+  }
+  .gallery-item {
+    width: 100%;
+    height: auto;
+  }
+  .gallery-item.big,
+  .gallery-item.small {
+    width: 100%;
+    height: auto;
+  }
+  .gallery-image {
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media (max-width: 480px) and (min-width: 300px) 
+{
+  .gallery-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-x: auto;
+    padding: 0 10px;
+  }
+  .gallery-item {
+    width: 100%;
+    height: auto;
+  }
+  .gallery-item.big,
+  .gallery-item.small {
+    width: 100%;
+    height: auto;
+  }
+  .gallery-image {
+    width: 100%;
+    height: auto;
+  }
+}
+
+
+

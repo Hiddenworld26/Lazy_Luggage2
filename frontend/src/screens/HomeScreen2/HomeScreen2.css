@@ -4,6 +4,7 @@
   padding: 0;
  margin-left: 0;
  margin-right : 0;
+ /* border : 1px solid black; */
 }
 
 .image-container {
@@ -64,7 +65,34 @@
   height:100%;
   width : 100%;
 }
+@media (min-width: 100px) and (max-width: 299px) {
 
+  .tagline-heading
+  {
+    
+    font-size: 20px;
+  }
+  
+    .image-grid
+    {
+      height:550vh;
+      width : 100%;
+      margin-bottom: 240px;
+      
+      /* margin-right: 25px; */
+     
+    }
+      .flex-cards
+    {
+      height : 18%;
+      width : 100%;
+      margin-top: 5px;
+     
+      
+    
+    }
+  
+}
 /* Mobile devices: 320px - 480px */
 @media (min-width: 300px) and (max-width: 480px) {
 
@@ -129,7 +157,7 @@
 
   .image-grid
 {
-  height:130vh;
+  height:100vh;
   width : 97%;
   margin-bottom: 130px;
   

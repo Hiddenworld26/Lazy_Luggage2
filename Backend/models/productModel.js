@@ -17,22 +17,20 @@ const ProductSchema = mongoose.Schema(
       type: String,
       required: false,
     },
-
-    price:
-    {
-      type:String,
-      required:true
+    price: {
+      type: String,
+      required: true,
     },
-    image: {
-      type : String,
-      
-      required:true,
-    },
-
+    images: [ // Changed from image to images to store an array of image URLs
+      {
+        type: String,
+        required: false,
+      },
+    ],
     user: {
       type: mongoose.Schema.Types.ObjectId,
-      ref: "User",
-      required:false,
+      ref: 'User',
+      required: false,
     },
   },
   {

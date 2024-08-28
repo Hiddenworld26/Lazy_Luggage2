@@ -62,6 +62,7 @@ import React from 'react';
 import { BrowserRouter, Routes, Route, useLocation } from 'react-router-dom';
 import './App.css';
 import Footer from './Components/Footer/Footer';
+import Footer2 from './Components/Footer2/Footer2';
 import Header from './Components/Header/Header';
 import HomeScreen from './screens/HomeScreen/HomeScreen';
 import HomeScreen2 from './screens/HomeScreen2/HomeScreen2';
@@ -113,7 +114,7 @@ function MainContent() {
           <Route path="/footwear" element={<CommonMenuShopScreen component={<ShopPage2 />} />} />
         </Routes>
       </main>
-      {shouldRenderFooter && <Footer />}
+      {shouldRenderFooter && <Footer2 />}
     </>
   );
 }
