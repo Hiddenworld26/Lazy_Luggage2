@@ -1,7 +1,6 @@
 // SlidingPanel.js
 import React, { useEffect } from 'react';
-import './SlidingPanel.css';
-import Card from './Card';
+import './Cart.css';
 
 const SlidingPanel = ({ isOpen, togglePanel }) => {
   // Prevent background scrolling when the panel is open
@@ -24,8 +23,7 @@ const SlidingPanel = ({ isOpen, togglePanel }) => {
         <button onClick={togglePanel} className="close-button">Close</button>
         <h2>Shopping Cart</h2>
         <p>Your cart items go here.</p>
-        <br />
-       <Card/>
+        {/* Add your cart items and logic here */}
       </div>
     </>
   );

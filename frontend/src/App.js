@@ -114,7 +114,7 @@ function MainContent() {
           <Route path="/footwear" element={<CommonMenuShopScreen component={<ShopPage2 />} />} />
         </Routes>
       </main>
-      {shouldRenderFooter && <Footer2 />}
+      {/* {shouldRenderFooter && <Footer2 />} */}
     </>
   );
 }

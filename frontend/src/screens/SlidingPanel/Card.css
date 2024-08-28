@@ -1,0 +1,79 @@
+.product-card {
+    display: flex;
+    align-items: center;
+    /* border: 1px solid black; */
+    width: 100%; /* Full width of the panel */
+    background-color: #fff;
+    margin-bottom: 20px; /* Margin below each card */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 10px; /* Padding inside the card */
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+  }
+  
+  .product-image {
+    flex: 0 0 40%; /* Takes 40% of the card width */
+    max-width: 100%; /* Prevents overflow */
+    height: 180px; /* Maintain aspect ratio */
+    /* object-fit: cover; Cover the allocated space */
+    margin-right: 20px; /* Space between image and text */
+    border-radius: 8px; /* Rounded corners */
+  }
+  
+  .product-details {
+    flex: 1; /* Takes the remaining space */
+    padding: 0 10px; /* Padding around the details */
+  }
+  
+  .product-title {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 0 0 10px 0;
+  }
+  
+  .product-description,
+  .product-size,
+  .product-price {
+    margin: 5px 0;
+  }
+  
+  .quantity-control {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+  }
+  
+  .qty-button {
+    width: 30px;
+    height: 30px;
+    margin: 0 10px;
+    border: 1px solid #ddd;
+    background-color: #f8f8f8;
+    cursor: pointer;
+    border-radius: 4px;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .qty-button:hover {
+    background-color: #e7e7e7;
+  }
+  
+  .remove-button {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 5px 10px;
+    background-color:black;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+  }
+  
+  .remove-button:hover {
+    background-color: white;
+    color: black;
+  }
+  
